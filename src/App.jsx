@@ -286,8 +286,7 @@ function App() {
               <h3>Experiência</h3>
 
               <p>
-                Desenvolvimento de uma experiência simples, acessível e fácil de
-                utilizar.
+                João Eduardo, Thauany Liziane, Paulo Henrique e Arthur Alves
               </p>
             </div>
           </div>
