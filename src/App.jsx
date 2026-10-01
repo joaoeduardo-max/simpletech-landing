@@ -37,31 +37,31 @@ function App() {
           <div className="phone">
             <div className="phone-top">
               <span>SimpleTech</span>
-              <span>●</span>
+              <span className="phone-status"></span>
             </div>
 
             <div className="phone-content">
-              <span className="phone-welcome">Olá! 👋</span>
+              <span className="phone-welcome">Olá!</span>
 
               <h3>O que você deseja aprender?</h3>
 
               <div className="phone-option">
-                📱
+                <span className="phone-option-icon">01</span>
                 <span>Usar o celular</span>
               </div>
 
               <div className="phone-option">
-                💬
+                <span className="phone-option-icon">02</span>
                 <span>Fazer uma chamada</span>
               </div>
 
               <div className="phone-option">
-                🔒
+                <span className="phone-option-icon">03</span>
                 <span>Segurança digital</span>
               </div>
 
               <div className="phone-option">
-                🤖
+                <span className="phone-option-icon">04</span>
                 <span>Falar com assistente</span>
               </div>
             </div>
@@ -88,7 +88,7 @@ function App() {
 
           <div className="problem-card">
             <div className="problem-item">
-              <div className="problem-icon">📱</div>
+              <div className="problem-icon">01</div>
 
               <div>
                 <h3>Dificuldade com aplicativos</h3>
@@ -100,7 +100,7 @@ function App() {
             </div>
 
             <div className="problem-item">
-              <div className="problem-icon">🔒</div>
+              <div className="problem-icon">02</div>
 
               <div>
                 <h3>Segurança digital</h3>
@@ -110,7 +110,7 @@ function App() {
             </div>
 
             <div className="problem-item">
-              <div className="problem-icon">💡</div>
+              <div className="problem-icon">03</div>
 
               <div>
                 <h3>Mais autonomia</h3>
@@ -120,6 +120,55 @@ function App() {
                   confiança.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SOLUÇÃO */}
+        <section id="solucao" className="section section-light">
+          <div className="section-header">
+            <span className="section-tag">Nossa proposta</span>
+
+            <h2>Uma tecnologia mais simples e acessível</h2>
+
+            <p>
+              O SimpleTech foi pensado para ajudar pessoas 50+ a desenvolverem
+              autonomia no uso da tecnologia.
+            </p>
+          </div>
+
+          <div className="cards">
+            <div className="card">
+              <div className="card-icon">01</div>
+
+              <h3>Tecnologia</h3>
+
+              <p>
+                Aprenda tarefas digitais do cotidiano através de conteúdos
+                simples e fáceis de entender.
+              </p>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">02</div>
+
+              <h3>Segurança</h3>
+
+              <p>
+                Aprenda boas práticas para utilizar aplicativos, internet e
+                dispositivos com mais segurança.
+              </p>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">03</div>
+
+              <h3>Acessibilidade</h3>
+
+              <p>
+                Conteúdos desenvolvidos pensando nas necessidades do público com
+                50 anos ou mais.
+              </p>
             </div>
           </div>
         </section>
@@ -182,13 +231,10 @@ function App() {
             </p>
 
             <div className="audience-tags">
-              <span>📱 Celular</span>
-
-              <span>💬 Comunicação</span>
-
-              <span>🌐 Internet</span>
-
-              <span>🔒 Segurança</span>
+              <span>Celular</span>
+              <span>Comunicação</span>
+              <span>Internet</span>
+              <span>Segurança</span>
             </div>
           </div>
 
@@ -219,29 +265,23 @@ function App() {
 
           <div className="team-grid">
             <div className="team-card">
-              <div className="team-avatar">👨‍💻</div>
+              <div className="team-avatar">DE</div>
 
               <h3>Desenvolvimento</h3>
 
-              <p>
-                Responsável pela criação e implementação das funcionalidades do
-                projeto.
-              </p>
+              <p>João Eduardo e Thauany Liziane</p>
             </div>
 
             <div className="team-card">
-              <div className="team-avatar">📋</div>
+              <div className="team-avatar">OR</div>
 
               <h3>Organização</h3>
 
-              <p>
-                Planejamento das atividades, documentação e acompanhamento do
-                projeto.
-              </p>
+              <p>Thauany Liziane, Paulo Henrique e Arthur Alves</p>
             </div>
 
             <div className="team-card">
-              <div className="team-avatar">🎨</div>
+              <div className="team-avatar">EX</div>
 
               <h3>Experiência</h3>
 
@@ -269,7 +309,7 @@ function App() {
 
           <div className="governance-grid">
             <div className="governance-card">
-              <div className="governance-icon">📋</div>
+              <div className="governance-icon">01</div>
 
               <h3>Planejamento</h3>
 
@@ -280,7 +320,7 @@ function App() {
             </div>
 
             <div className="governance-card">
-              <div className="governance-icon">🔄</div>
+              <div className="governance-icon">02</div>
 
               <h3>Desenvolvimento</h3>
 
@@ -291,7 +331,7 @@ function App() {
             </div>
 
             <div className="governance-card">
-              <div className="governance-icon">📊</div>
+              <div className="governance-icon">03</div>
 
               <h3>Acompanhamento</h3>
 
@@ -307,7 +347,7 @@ function App() {
         <section className="ai-section">
           <div className="ai-content">
             <div className="ai-main">
-              <div className="ai-icon">🤖</div>
+              <div className="ai-icon">IA</div>
 
               <div>
                 <span className="ai-tag">TECNOLOGIA</span>
@@ -324,17 +364,17 @@ function App() {
 
             <div className="ai-features">
               <div className="ai-feature">
-                <span>💬</span>
+                <span>01</span>
                 <p>Responde dúvidas</p>
               </div>
 
               <div className="ai-feature">
-                <span>🧭</span>
+                <span>02</span>
                 <p>Orienta o usuário</p>
               </div>
 
               <div className="ai-feature">
-                <span>💡</span>
+                <span>03</span>
                 <p>Explica de forma simples</p>
               </div>
             </div>
